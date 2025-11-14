@@ -1,12 +1,16 @@
 import React from 'react';
+import Calculator from '../Calculator';
 
-/**
- * Для ИИ: Это заглушка. Обнови этот компонент. Здесь должен быть начальный экран приложения.
- */
-export const Home = () => {
+const Home = () => {
   return (
-    <div>
-      <div>This is home page</div>
+    <div data-easytag="id1-react/src/components/Home/index.jsx" className="home">
+      <div className="home__container">
+        <h1 className="home__title">Простой калькулятор</h1>
+        <p className="home__subtitle">Десктопная версия</p>
+        <Calculator />
+      </div>
     </div>
   );
 };
+
+export default Home;
